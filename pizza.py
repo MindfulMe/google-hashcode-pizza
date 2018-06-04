@@ -149,18 +149,31 @@ class PizzaCutter:
                         self.updatePizza(R, C)
         print(self.pizza)
 
+
+def write_file(cutter, filename):
+    '''
+    Write the output file
+    '''
+    with open(filename, 'w') as f:
+        f.write('{}\n'.format(len(cutter.slices)))
+        for slic in cutter.slices:
+            f.write(' '.join([str(item) for item in slic]) + '\n')
+
+
 def main():
     '''
     Main function
     '''
     if len(sys.argv) < 3:
-        sys.exit('Syntax: %s <filename>' % sys.argv[0])
+        sys.exit('Syntax: %s <filename> <output>' % sys.argv[0])
 
     print('Running on file %s' % sys.argv[1])
 
     pizza, L, H = read_file(sys.argv[1])
     cortapisa = PizzaCutter(pizza, L, H)
     cortapisa.start()
+
+    write_file(cortapisa, sys.argv[2])
 
 
 if __name__ == '__main__':
