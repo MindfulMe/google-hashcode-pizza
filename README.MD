@@ -6,3 +6,5 @@ Pizza google hash code solution, I don't forget my past falls
 -[used stackoverflow](stackoverflow.com)
 
 -[used py:](https://www.pythoncentral.io/pythons-range-function-explained/)
+
+-[used py:](https://www.pythoncentral.io/pythons-range-function-explained/)
