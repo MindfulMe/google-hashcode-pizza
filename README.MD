@@ -1,5 +1,6 @@
 Pizza google hash code solution, I don't forget my past falls
 
+The fork for learning purposes
 
 -[used docs numpy](https://docs.scipy.org/doc/numpy/reference/generated/numpy.zeros.html)
 
@@ -7,4 +8,4 @@ Pizza google hash code solution, I don't forget my past falls
 
 -[used py:](https://www.pythoncentral.io/pythons-range-function-explained/)
 
--[used py:](https://www.pythoncentral.io/pythons-range-function-explained/)
+
